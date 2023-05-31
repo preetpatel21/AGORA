@@ -4,7 +4,7 @@ import 'package:permission_handler/permission_handler.dart';
 
 import 'package:agora_rtc_engine/agora_rtc_engine.dart';
 
-const String appId = "<--Insert app ID here-->";
+import 'Utils/constant.dart';
 
 
 class LiveStream extends StatefulWidget {
@@ -15,8 +15,8 @@ class LiveStream extends StatefulWidget {
 }
 
 class _LiveStreamState extends State<LiveStream> {
-  String channelName = "<--Insert channel name here-->";
-  String token = "<--Insert authentication token here-->";
+  String channelName = agoraChannelName;
+  String token = agoraToken;
 
   int uid = 0; // uid of the local user
 
