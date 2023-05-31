@@ -15,8 +15,10 @@ _VideoScreenState createState() => _VideoScreenState();
 }
 
 class _VideoScreenState extends State<VideoScreen> {
-    
-    
+
+    String channelName = agoraChannelName;
+    String token = agoraToken;
+
     int uid = 0; // uid of the local user
 
     int? _remoteUid; // uid of the remote user

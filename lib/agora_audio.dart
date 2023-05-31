@@ -83,8 +83,8 @@ class _AudionScreenState extends State<AudionScreen> {
     );
 
     await agoraEngine.joinChannel(
-      token: token,
-      channelId: channelName,
+      token: agoraToken,
+      channelId: agoraChannelName,
       options: options,
       uid: uid,
     );
