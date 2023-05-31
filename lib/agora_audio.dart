@@ -4,21 +4,19 @@ import 'package:permission_handler/permission_handler.dart';
 
 import 'package:agora_rtc_engine/agora_rtc_engine.dart';
 
-const String appId = "f49ac507d7a344f2aa64c4c0d09f495c";
+import 'Utils/constant.dart';
 
-void main() => runApp(const MaterialApp(home: MyApp()));
 
-class MyApp extends StatefulWidget {
-  const MyApp({Key? key}) : super(key: key);
+
+class AudionScreen extends StatefulWidget {
+  const AudionScreen({Key? key}) : super(key: key);
 
   @override
-  _MyAppState createState() => _MyAppState();
+  _AudionScreenState createState() => _AudionScreenState();
 }
 
-class _MyAppState extends State<MyApp> {
-  String channelName = "agora_check";
-  String token =
-      "007eJxTYPiwulSu6syF44cnl04+pv/yLlOzz/qHxw8qH5r9QGThhJNzFRjSTCwTk00NzFPME41NTNKMEhPNTJJNkg1SDCyBUqbJPn/LUhoCGRnELrxlZmSAQBCfmyExPb8oMT45IzU5m4EBAI6YJlw=";
+class _AudionScreenState extends State<AudionScreen> {
+  
 
   int uid = 0; // uid of the local user
 
