@@ -6,7 +6,6 @@ import 'package:agora_rtc_engine/agora_rtc_engine.dart';
 
 const String appId = "<--Insert app ID here-->";
 
-void main() => runApp(const MaterialApp(home: LiveStream()));
 
 class LiveStream extends StatefulWidget {
   const LiveStream({Key? key}) : super(key: key);

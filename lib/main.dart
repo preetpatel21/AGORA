@@ -2,6 +2,8 @@ import 'package:agora_video/agora_audio.dart';
 import 'package:agora_video/agora_video.dart';
 import 'package:flutter/material.dart';
 
+import 'interactive_live_streaming.dart';
+
 void main() {
   runApp(const MyApp());
 }
@@ -77,10 +79,23 @@ class _MyHomePageState extends State<MyHomePage> {
             const SizedBox(
               height: 20,
             ),
-            const Text(
+            InkWell(
+              onTap: () {
+                Navigator.push(
+                    context,
+                    MaterialPageRoute(
+                      builder: (context) =>  LiveStream(),
+                    ));
+              },
+              child: new Padding(
+                padding: const EdgeInsets.all(10.0),
+                child: Text(
               'TV ROOM',
               style: TextStyle(fontSize: 20),
             ),
+              ),
+            ),
+            
           ],
         ),
       ),
